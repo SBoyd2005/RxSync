@@ -5,7 +5,7 @@ import Footer from './src/Content';
 import * as State from './state';
 import { startCase } from 'lodash';
 import Navigo from 'navigo';
-import axios from 'axios;';
+import axios from 'axios';
 
 var router = new Navigo(location.origin);
 var root = document.querySelector('#root');
