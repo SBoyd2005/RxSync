@@ -1,0 +1,137 @@
+#root {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border: 20px solid gold;
+    font-size: 20px;
+    display: inline-flexbox;
+    margin: 0;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+#header {
+    grid-area: header;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    background-color: aquamarine;
+    color: blue;
+    margin: 0 auto;
+    border: 3px solid;
+    max-width: 960px;
+    text-align: center;
+}
+
+#navigation, #footer {
+    padding: 15px;
+}
+
+#navigation a {
+    text-transform: uppercase;
+}
+
+#navigation a, #footer a {
+    text-decoration: none;
+    transition: 0.1s color ease;
+}
+
+#navigation a:hover, #footer a:hover {
+    border-bottom: 3px solid;
+    text-decoration: none;
+    color: gold;
+}
+
+h1 {
+    color: blue;
+}
+
+.goals{
+    font-style: italic;
+}
+
+.image {
+    max-height: 50%;
+    max-width: 50%;
+}
+
+#navigation>ul>li>ul>li, #footer {
+    color: gold;
+    margin: 0 auto;
+    position: center;
+    display: hidden;
+    list-style-type: none;
+}
+
+#navigation>ul>li>ul {
+    position: fixed ;
+    left: 200px;
+    list-style: none;
+    display: hidden;
+    top: 75px;
+    list-style-type: none;
+    border: 3px solid gold;
+}
+
+#navigation>ul>li:hover>ul {
+    border: 3px solid gold;
+    display: block;
+}
+
+#content {
+    text-align: center;
+    margin: 20px;
+    color: white;
+    grid-area: content;
+    font-family: 'chivo', sans-serif;
+}
+
+figure {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li:hover {
+    background: gray;
+}
+
+#navigation {
+    top: 0;
+    width: 98%;
+
+}
+
+#navigation>ul, #footer>li {
+    display: flexbox;
+    flex-direction: row;
+    font-family: 'Russo One', sans-serif;
+}
+
+
+h3 {
+    font-style: italic;
+}
+
+#footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+    color: blue;
+    margin: 0 auto;
+    border: 3px solid;
+    width: 925px;
+    height: 25px;
+}
